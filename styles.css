@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(199, 205, 238);
+    font-weight: 300;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px 0 20px 20px;
+}
+
+.porciju-skaicioukle{
+    background-color: white;
+    border: 1px solid black;
+    border: none;
+    box-shadow: 0px 1px 10px;
+    width: 600px;
+    height: 112px;
+    margin: 30px;
+}
+
+.receptu-container{
+    background-color: white;
+    border: 1px solid black;
+    border: none;
+    box-shadow: 0px 1px 10px;
+    width: 600px;
+    min-height: 305px;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(239, 245, 249);
+
+}
+
+#checkMark {
+    /* display: none; */
+    position: absolute;
+    color: green;
+    background-color: white;
+    border-radius: 30px;
+    scale: 1.5;
+    /* left: 25%; */
+    /* left: 51%; */
+    /* left: 78%; */
+    top: 16%;
+}
+
+
+
+.receptai h3{
+    font-size: 12px;
+    width: auto;
+    height: 14px;
+    padding: 0 5px;
+}
+
+.receptai{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 100px;
+    
+
+}
+#pirmas-receptas, #antras-receptas, #trecias-receptas{
+    width: 133px;
+    height: 214px;
+    border: 0.1px solid rgb(207, 205, 205);
+}
+
+.title{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+h3{
+    font-size: 16px;
+    width: auto;
+    height: 14px;
+    padding: 0 5px;
+
+}
+
+.receptu-container p{
+    font-size: 10px;
+    width: 116px;
+    height: 77px;
+    line-height: auto;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+    
+}
+
+.recepto-info-container{
+    background-color: rgb(239, 245, 249);
+    border: 1px solid black;
+    border: none;
+    box-shadow: 0px 1px 10px;
+    width: 600px;
+    min-height: 159px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.recepto-info-container p{
+
+    font-size: 12px;
+    margin: 5px;
+    padding-left: 20px; 
+    letter-spacing: 0.05em; 
+}
+
+#receptas1, #receptas2, #receptas3{
+    border: 0.1px solid lightgray;
+    margin-left: 0;
+    margin: 20px;
+
+}
+
+#receptas1 p, #receptas2 p, #receptas3 p{
+    margin-left: 0;
+    padding-left: 5px;
+
+}
+
+#receptas1 {
+    margin-left: 20px ;
+
+}
+
+strong{
+    justify-self: end;
+}
+
+
+
+.receptu-laukas{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.recepto-info-container h3{
+  padding: 20px 0 0 20px;  
+}
+
+#pirmas-receptas:hover, #antras-receptas:hover, #trecias-receptas:hover {
+    border: 0.1px solid green;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.porciju-skaicioukle{
+    border-radius: 10px;
+    background-color: rgb(239, 245, 249);
+}
+
+.porciju-container{
+    padding: 20px;
+}
+
+
+.range {
+    position: relative;
+    width: calc(100% - 30px);
+}
+
+
+#sliderValue{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: rgb(199, 205, 238);
+    min-width: 20px;
+    padding: 1px;
+    margin-left: 10px;
+}
+
+
+
+
+/* 
+.slider-value {
+    position: relative;
+
+    //it's for because left moves the element relative to it's left not the middle//
+    width:calc(100% - 30px);  
+}
+
+.slider-value>span {
+    position: absolute;
+    text-align: center;
+
+    //must match the thumb width //
+    width: 30px;
+} */
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 2px solid #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 9px;
+    background: #000000;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #000000;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #000000;
+  }
+
+
+    
+
+

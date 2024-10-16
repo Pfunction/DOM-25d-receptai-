@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptai</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="receptu-container">
+            <svg id="checkMark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            <div class="title">
+                <h3>Pasirinkite receptą:</h3>
+            </div>
+            <div class="receptai">
+                <div id="pirmas-receptas" onclick="Select1()">
+                    <img src="img/vistiena_salotos.png" alt="vistiena_salotos">
+                    <h3>Vištiena su salotom</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.</p>
+                </div>
+                <div id="antras-receptas" onclick="Select2()">
+                    <img src="img/tortas_melynes.png" alt="tortas_melynes">
+                    <h3>Tortas su mėlynėm</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.</p>
+                </div>
+
+                <div id="trecias-receptas" onclick="Select3()">
+                    <img src="img/makaronai_mesa.png" alt="makaronai_mesa">
+                    <h3>Makaronai su mėsa</h3>
+                    <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="porciju-skaicioukle">
+            <div class="porciju-container">
+                <h3>Kiek porcijų gaminsite?</h3>
+                <label for="rangeSlider"></label>
+                    <input type="range" id="rangeSlider" min="1" max="10" step="1" value="1">
+                    <span id="sliderValue">1</span>
+
+            </div>
+
+        </div>
+        <div class="recepto-informacija">
+            <div class="recepto-info-container">
+                <h3>Jums reikės šiu ingredientų, tokiais kiekiais:</h3>
+                <p id="pradinis-tekstas">Laukiama recepto pasirinkimo..</p>
+                <div class="receptu-laukas">
+                    <div id="receptas1">
+                        <p>Vištiena: <strong id="vistiena">0</strong> g</p>
+                        <p>Ridikėlių: <strong id="ridikeliai">0</strong> vnt.</p>
+                        <p>Salotų: <strong id="salotu">0</strong> vnt.</p>
+                        <p>Svogūno laiškų: <strong id="svoguno_laisku">0</strong> vnt.</p>
+                        <p>Agurkai: <strong id="agurkai">0</strong> vnt.</p>
+                        <p>Sezamo aliejus: <strong id="sezamo_aliejus">0</strong> šaukštas</p>
+                </div>
+                <div id="receptas2">
+                        <p>Sausainių: <strong id="sausainiai">0</strong> g</p>
+                        <p>Sviesto ištirpinto: <strong id="sviestas">0</strong> g</p>
+                        <p>Graikiško jogurto: <strong id="jogurtas">0</strong> g</p>
+                        <p>Mascarpone: <strong id="mascarpone">0</strong> g</p>
+                        <p>Cukraus pudros: <strong id="cukrus">0</strong> g</p>
+                        <p>Želatinos milteliais: <strong id="zelatina">0</strong> g</p>
+                        <p>Šaukštelis vanilės pastos: <strong id="vanile">0</strong> šaukštelis</p>
+                        <p>Grietinėlės 36% labai šaltos: <strong id="grietinele">0</strong> g</p>
+                        <p>Mėlynių arba šilauogių: <strong id="melynes">0</strong> g</p>
+                        <p>Šaukštai cukraus pudros: <strong id="cukraus_pudra">0</strong> šaukštai</p>
+
+                </div>
+                <div id="receptas3">
+                        <p>Kiaulienos faršo: <strong id="kiauliena"></strong> g</p>
+                        <p>Vyšninių pomidoriukų:<strong id="vpomidorai"></strong> g</p>
+                        <p>Knorr FIX ruošinio spagečiams "Bolognese": <strong id="knorr"></strong> vnt.</p>
+                        <p>Skiltelių česnako:<strong id="cesnakas"></strong> vnt.</p>
+                        <p>Svogūno: <strong id="svogunas"></strong> vnt.</p>
+                        <p>Juodų alyvuogių: <strong id="alyvuoges"></strong> vnt.</p>
+                        <p>Pomidorų: <strong id="pomidorai"></strong> g.</p>
+                        <p>Aliejaus: <strong id="aliejus"></strong> šaukštelių</p>
+                </div>
+                </div>
+ 
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
